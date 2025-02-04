@@ -1,0 +1,74 @@
+<div class="d-flex justify-content-center align-items-center vh-100 bg-light">
+  <div class="card p-4">
+    <div class="card-body">
+      <h5 class="card-title text-center">Crie sua conta</h5>
+      <form>
+        <!-- Nome input -->
+        <mdb-form-control class="mb-4">
+          <input
+            mdbInput
+            type="text"
+            id="nome"
+            name="nome"
+            [(ngModel)]="usuario.nome"
+            class="form-control"
+          />
+          <label mdbLabel class="form-label" for="nome">Nome</label>
+        </mdb-form-control>
+
+        <!-- Apelido input -->
+        <mdb-form-control class="mb-4">
+          <input
+            mdbInput
+            type="text"
+            id="apelido"
+            name="apelido"
+            [(ngModel)]="usuario.apelido"
+            class="form-control"
+          />
+          <label mdbLabel class="form-label" for="apelido">Apelido</label>
+        </mdb-form-control>
+
+        <!-- Email input -->
+        <mdb-form-control class="mb-4">
+          <input
+            mdbInput
+            type="email"
+            id="email"
+            name="email"
+            [(ngModel)]="usuario.email"
+            class="form-control"
+          />
+          <label mdbLabel class="form-label" for="email">Email</label>
+        </mdb-form-control>
+
+        <!-- Password input -->
+        <mdb-form-control class="mb-4">
+          <input
+            mdbInput
+            type="password"
+            id="senha"
+            name="senha"
+            [(ngModel)]="usuario.senha"
+            class="form-control"
+          />
+          <label mdbLabel class="form-label" for="senha">Senha</label>
+        </mdb-form-control>
+
+        <div class="link text-center aumentaTamanho">
+          <a href="/login">Já possui conta? Clique aqui!</a>
+        </div>
+
+        <!-- Submit button -->
+        <button
+          mdbRipple
+          type="button"
+          class="btn w-100 mt-3 aumentaTamanho bg-light"
+          (click)="cadastrar()"
+        >
+          Criar conta
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

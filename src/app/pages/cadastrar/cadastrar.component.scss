@@ -1,0 +1,37 @@
+.card {
+  width: 40%;
+  color: black;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.link {
+  text-align: center;
+  margin: 20px;
+}
+
+.bg-light {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.card:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.card-body button {
+  color: white;
+}
+
+.aumentaTamanho:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+.btn {
+  margin-top: 0px !important;
+}

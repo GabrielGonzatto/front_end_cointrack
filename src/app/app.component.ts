@@ -9,5 +9,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'front_end_cointrack';
+  title = 'CoinTrack';
+
+  isEmpty(value: any): boolean {
+    return value === null || value === undefined || value === '';
+  }
 }
